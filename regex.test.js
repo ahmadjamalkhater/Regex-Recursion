@@ -33,10 +33,15 @@ find all images in that text and return their names and extention in an array
 required extention are jpg, jpeg and png.
 */
 
-function imagesSearcher(text){
-    let arr = [];
+// function imagesSearcher(text){
+//     let arr = [];
+//     // Add your logic.
+//     return arr
+// }
+function capitalA(s){
     // Add your logic.
-    return arr
+    let regix=/^[a-zA-Z ]*A$/
+    return regix.test(s)
 }
 
 
