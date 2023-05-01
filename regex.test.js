@@ -4,44 +4,31 @@
 
 /* Write a function that take a string and return true if the string only contain uppercase and lowercase
 characters (no numbers and symbols) and it should end with capital A else return false */
-
 function capitalA(s){
-    
-    let reg=/[a-z A-z]+[A]$/;
-    let rse=reg.text(s);
-    return (rse);
-}
-//return false;
-
-   
+    let regex1= /[-+_!@#$%^&*.,?()]|[0-9]|A$/;
+   return((regex1.test(s)));
+ 
+ }
 
 
 /* Write a function that take a string and return true if the the sting is following the emails pattern
 which end with io (example@example.io) */
 
 function ioEmail(email){
-    // Add your logic.
-
- let reg=/[a-z A-Z]+@[a-z A-Z]+.io$/;
-    let rse=reg.text(email);
-    return rse;
-   } 
-   
+    let regex2= /^[a-zA-Z0-9_%+-]+@[a-zA-Z0-9.-]+\.io$/;
+    return(regex2.test(email));
+    
+}
 
 /* You have a text that contain image names with their extention you need to write a function to 
 find all images in that text and return their names and extention in an array 
 required extention are jpg, jpeg and png.
 */
 
-// function imagesSearcher(text){
-//     let arr = [];
-//     // Add your logic.
-//     return arr
-// }
-function capitalA(s){
+function imagesSearcher(text){
+    let arr = [];
     // Add your logic.
-    let regix=/^[a-zA-Z ]*A$/
-    return regix.test(s)
+    return arr
 }
 
 
